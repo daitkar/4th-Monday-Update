@@ -6,8 +6,7 @@
                 <div class="form-group" ng-class="{ 'has-error': userForm.name.$touched && userForm.name.$invalid }">
                     <label class="control-label">First Name</label>
                     <input type="text" name="name" class="form-control" placeholder="Enter First Name"
-                           ng-model="name"
-                           ng-minlength="5"
+                           ng-model="name"                     
                            ng-maxlength="10"
                            ng-pattern="/^[a-zA-Z ]{1,25}$/"
                            ng-required="true"/>
@@ -22,7 +21,6 @@
                     <label class="control-label">Last Name</label>
                     <input name="LastName" type="text" class="form-control" placeholder="Enter Last Name"
                            ng-model="LastName"
-                           ng-minlength="5"
                            ng-maxlength="10"
                            ng-pattern="/^[a-zA-Z ]{1,25}$/"
                            ng-required="true"/>
